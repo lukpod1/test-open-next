@@ -8,8 +8,9 @@ export function API({ stack }: StackContext) {
   });
 
   const site = new NextjsSite(stack, "site", {
-    path: "tutorial",
+    path: "my-app",
   })
+
   stack.addOutputs({
     ApiEndpoint: api.url,
     URL: site.url || "localhost:3000"
