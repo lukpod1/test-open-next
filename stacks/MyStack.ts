@@ -9,7 +9,7 @@ export function API({ stack }: StackContext) {
 
   const site = new NextjsSite(stack, "site", {
     path: "my-app",
-    buildCommand: "npx --yes open-next@2.2.4 build"
+    buildCommand: "npx --yes open-next@2.3.3 build"
   })
 
   stack.addOutputs({
